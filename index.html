@@ -18,8 +18,102 @@
   </head>
   <body>
     <!-- HEADER -->
+    <div class="jumbotron">
+      <h1>Employee Data Management</h1>
+    </div>
     <!-- CURRENT EMPLOYEES -->
+    <div class="container train-schedule">
+      <div class="card">
+        <div class="card-header">
+          Current Employees
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Months Worked</th>
+                <th scope="col">Monthly Rate ($)</th>
+                <th scope="col">Total Billed ($)</th>
+              </tr>
+            </thead>
+            <tbody class="table-hover">
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <!-- ADD EMPLOYEE -->
+    <div class="container add-train">
+      <div class="card">
+        <div class="card-header">
+          Add Employee
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="train-name">Employee Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="train-name"
+                placeholder="Train Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="destination">Role</label>
+              <input
+                type="text"
+                class="form-control"
+                id="destination"
+                placeholder="Destination"
+              />
+            </div>
+            <div class="form-group">
+              <label for="first-time">Start Date (MM/DD/YYYY)</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first-time"
+                placeholder="First Train Time"
+              />
+            </div>
+            <div class="form-group">
+              <label for="frequency">Monthly Rate</label>
+              <input
+                type="text"
+                class="form-control"
+                id="frequency"
+                placeholder="Frequency"
+              />
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/ff8d25dcae.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- JAVASCRIPT, JQUERY -->
     <script
       type="text/javascript"
