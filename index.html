@@ -2,25 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Employee Data Management</title>
+  <title>Employee Data Management</title>
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-    <!-- HEADER -->
-    <!-- CURRENT EMPLOYEES -->
-    <!-- ADD EMPLOYEE -->
-    <!-- JAVASCRIPT, JQUERY -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <!-- HEADER -->
+  <div class="jumbotron">
+    <h1>Employee Data Management</h1>
+  </div>
+  <!-- CURRENT EMPLOYEES -->
+  <div class="container employee-data">
+    <div class="card">
+      <div class="card-header">
+        Current Employees
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Employee Name</th>
+              <th scope="col">Role</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">Months Worked</th>
+              <th scope="col">Monthly Rate ($)</th>
+              <th scope="col">Total Billed ($)</th>
+            </tr>
+          </thead>
+          <tbody class="table-hover">
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD EMPLOYEE -->
+  <div class="container add-train">
+    <div class="card">
+      <div class="card-header">
+        Add Employee
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="employee-name">Employee Name</label>
+            <input type="text" class="form-control" id="employee-name" placeholder="Employee Name" />
+          </div>
+          <div class="form-group">
+            <label for="role">Role</label>
+            <input type="text" class="form-control" id="role" placeholder="Role" />
+          </div>
+          <div class="form-group">
+            <label for="start">Start Date (MM/DD/YYYY)</label>
+            <input type="text" class="form-control" id="start" placeholder="Start Date" />
+          </div>
+          <div class="form-group">
+            <label for="rate">Monthly Rate</label>
+            <input type="text" class="form-control" id="rate" placeholder="Rate" />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/ff8d25dcae.js" crossorigin="anonymous"></script>
+
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+  <!-- JAVASCRIPT, JQUERY -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
